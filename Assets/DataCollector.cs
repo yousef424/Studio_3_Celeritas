@@ -19,7 +19,7 @@ public class DataCollector : MonoBehaviour
 	// Use this for initialization
 	public IEnumerator DisplayData () 
 	{
-		playerData = new WWW("http://localhost/studio_3_player_data/Player_data.php");
+		playerData = new WWW("https://royalriches.000webhostapp.com/Player_data.php");
 		yield return playerData;
         playerDataString = playerData.text;
 		Debug.Log(playerDataString);

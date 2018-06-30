@@ -8,7 +8,7 @@ public class PlayerLogin : MonoBehaviour
 
     public string inputUserName;
     public string inputPassWord;
-    private string playerLoginURL= "http://localhost/studio_3_player_data/Login.php";
+    private string playerLoginURL= "https://royalriches.000webhostapp.com/Login.php";
     public Text inputUsernameText;
     public Text inputPasswordText;
 

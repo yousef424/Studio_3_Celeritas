@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PlayerDataEntry : MonoBehaviour
 {
 
-    private string insertUserURL = "http://localhost/studio_3_player_data/Insert_User.php";
+    private string insertUserURL = "https://royalriches.000webhostapp.com/Insert_User.php";
     public string inputEmail;
     public string inputUserName;
     public string inputPassWord;
@@ -28,5 +28,6 @@ public class PlayerDataEntry : MonoBehaviour
         accountDatabase.AddField("usernameFromUser", username);
         accountDatabase.AddField("passwordFromUser", password);
         WWW register = new WWW(insertUserURL, accountDatabase);
+        Debug.Log("i ddi ");
     }
 }
