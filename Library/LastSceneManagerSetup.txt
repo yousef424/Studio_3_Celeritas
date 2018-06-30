@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Login.unity
+- path: Assets/Individual_Sections/KoosaStuff/Photon Stuff/Scenes/Photon test.unity
   isLoaded: 1
   isActive: 1
