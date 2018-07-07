@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Individual_Sections/KoosaStuff/Photon Stuff/Scenes/Photon test.unity
+- path: Assets/Individual_Sections/Hamdi/Scenes/Prototype.unity
   isLoaded: 1
   isActive: 1

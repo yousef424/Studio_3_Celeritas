@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Individual_Sections\Hamdi\Scripts\PlayerContoller.cs" />
      <Compile Include="Assets\Individual_Sections\KoosaStuff\Photon Stuff\Photon Unity Networking\Demos\Demo2DJumpAndRunWithPhysics\Scripts\Demo2DJumpAndRun.cs" />
      <Compile Include="Assets\Individual_Sections\KoosaStuff\Photon Stuff\Photon Unity Networking\Demos\Demo2DJumpAndRunWithPhysics\Scripts\JumpAndRunMovement.cs" />
      <Compile Include="Assets\Individual_Sections\KoosaStuff\Photon Stuff\Photon Unity Networking\Demos\DemoBoxes\ColorPerPlayer.cs" />
@@ -199,6 +200,7 @@
      <Compile Include="Assets\Individual_Sections\KoosaStuff\Photon Stuff\Scripts\PhotonLobby.cs" />
      <Compile Include="Assets\Individual_Sections\KoosaStuff\Photon Stuff\Scripts\PlayerPhoton.cs" />
      <Compile Include="Assets\Individual_Sections\KoosaStuff\Photon Stuff\Scripts\ProtectionDestruction.cs" />
+     <Compile Include="Assets\Individual_Sections\KoosaStuff\Photon Stuff\Scripts\RoomPresenter.cs" />
      <Compile Include="Assets\Individual_Sections\KoosaStuff\PhpStuff\Scripts\DataCollector.cs" />
      <Compile Include="Assets\Individual_Sections\KoosaStuff\PhpStuff\Scripts\PlayerDataEntry.cs" />
      <Compile Include="Assets\Individual_Sections\KoosaStuff\PhpStuff\Scripts\PlayerLogin.cs" />
