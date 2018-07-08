@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerPhoton : MonoBehaviour
 {
     public static PlayerPhoton playerPhotonInstance;
-    public string PlayerName { get; private set; }
+    public string PlayerName;
 
     void Awake()
     {

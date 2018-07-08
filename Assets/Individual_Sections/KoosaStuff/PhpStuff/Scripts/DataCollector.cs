@@ -22,7 +22,7 @@ public class DataCollector : MonoBehaviour
 		playerData = new WWW("https://royalriches.000webhostapp.com/Player_data.php");
 		yield return playerData;
         playerDataString = playerData.text;
-		Debug.Log(playerDataString);
+		Debug.Log(playerData.text);
         playerDataArray = playerDataString.Split(';');
         Debug.Log(GetSpecifiedData(playerDataArray[playerIndex], dataToDisplay));
 	}

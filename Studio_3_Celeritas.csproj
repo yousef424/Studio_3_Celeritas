@@ -396,14 +396,19 @@
     <Compile Include="Assets\Individual_Sections\KoosaStuff\Photon Stuff\PhotonChatApi\ChatUserStatus.cs" />
     <Compile Include="Assets\Individual_Sections\KoosaStuff\Photon Stuff\PhotonChatApi\IChatClientListener.cs" />
     <Compile Include="Assets\Individual_Sections\KoosaStuff\Photon Stuff\Plugins\WebSocket\WebSocket.cs" />
+    <Compile Include="Assets\Individual_Sections\KoosaStuff\Photon Stuff\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Individual_Sections\KoosaStuff\Photon Stuff\Scripts\CanvasManager.cs" />
     <Compile Include="Assets\Individual_Sections\KoosaStuff\Photon Stuff\Scripts\CreateRoom.cs" />
-    <Compile Include="Assets\Individual_Sections\KoosaStuff\Photon Stuff\Scripts\PhotonLobby.cs" />
+    <Compile Include="Assets\Individual_Sections\KoosaStuff\Photon Stuff\Scripts\JoinRoom.cs" />
+    <Compile Include="Assets\Individual_Sections\KoosaStuff\Photon Stuff\Scripts\MinionSpawnner.cs" />
+    <Compile Include="Assets\Individual_Sections\KoosaStuff\Photon Stuff\Scripts\PhotonConnection.cs" />
+    <Compile Include="Assets\Individual_Sections\KoosaStuff\Photon Stuff\Scripts\PhotonHnadler.cs" />
+    <Compile Include="Assets\Individual_Sections\KoosaStuff\Photon Stuff\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Individual_Sections\KoosaStuff\Photon Stuff\Scripts\PlayerPhoton.cs" />
-    <Compile Include="Assets\Individual_Sections\KoosaStuff\Photon Stuff\Scripts\ProtectionDestruction.cs" />
-    <Compile Include="Assets\Individual_Sections\KoosaStuff\Photon Stuff\Scripts\RoomPresenter.cs" />
     <Compile Include="Assets\Individual_Sections\KoosaStuff\PhpStuff\Scripts\DataCollector.cs" />
     <Compile Include="Assets\Individual_Sections\KoosaStuff\PhpStuff\Scripts\PlayerDataEntry.cs" />
     <Compile Include="Assets\Individual_Sections\KoosaStuff\PhpStuff\Scripts\PlayerLogin.cs" />
+    <Compile Include="Assets\minionBehaviourtest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Individual_Sections\KoosaStuff\Photon Stuff\Photon Unity Networking\Demos\DemoBoxes\Resources\eurof_tt.txt" />
