@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Individual_Sections/KoosaStuff/PhpStuff/Scenes/PHPTEST.unity
+- path: Assets/Individual_Sections/Hamdi/Scenes/Prototype.unity
   isLoaded: 1
   isActive: 1
