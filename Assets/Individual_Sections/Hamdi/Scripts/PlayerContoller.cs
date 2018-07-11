@@ -55,6 +55,7 @@ public class PlayerContoller : MonoBehaviour
         transform.eulerAngles = new Vector3(0.0f, yaw, 0.0f);
         //c.transform.eulerAngles = new Vector3(pitch, 0.0f, 0.0f);
     }
+    //yousef note: change this to a raycast to check for the ground instead of collision cause its tough to detect collisions over the network
 
     private void OnCollisionEnter(Collision other)
     {

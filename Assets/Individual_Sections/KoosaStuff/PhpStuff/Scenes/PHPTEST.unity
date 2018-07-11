@@ -1092,7 +1092,7 @@ MonoBehaviour:
   playerDataList: []
   playerDataArray: []
   dataToDisplay: 
-  playerIndex: 0
+  playerIndex: 1
   getData: 0
 --- !u!4 &1152380316
 Transform:
