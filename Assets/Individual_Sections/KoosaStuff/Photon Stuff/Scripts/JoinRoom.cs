@@ -35,6 +35,7 @@ public class JoinRoom : MonoBehaviour
         roomOptions.MaxPlayers = 4;
         PhotonNetwork.JoinOrCreateRoom(roomNameJoined.text, roomOptions, TypedLobby.Default);
         */
+        
 
     }
     private void OnJoinedRoom()

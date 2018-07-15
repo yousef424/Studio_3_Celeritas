@@ -42,4 +42,9 @@ MonoBehaviour:
   - RequestForPickupItems
   - RequestForPickupTimes
   - TaggedPlayer
+  - BlueTeam
+  - RedTeam
+  - Reduce
+  - Shooting
+  - Destroy
   DisableAutoOpenWizard: 1

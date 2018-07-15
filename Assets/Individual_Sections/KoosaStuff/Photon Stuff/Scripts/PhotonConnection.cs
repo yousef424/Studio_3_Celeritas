@@ -25,7 +25,7 @@ public class PhotonConnection : MonoBehaviour
     private void OnConnectedToMaster()
     {
         Debug.Log("Connecting to MasterClient");
-        PhotonNetwork.playerName = PlayerPhoton.playerPhotonInstance.PlayerName;
+        PhotonNetwork.playerName = PlayerPhoton.playerPhotonInstance.playerName;
         PhotonNetwork.JoinLobby(TypedLobby.Default);
 
     }

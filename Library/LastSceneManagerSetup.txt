@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Individual_Sections/KoosaStuff/Photon Stuff/Scenes/GameScene.unity
+- path: Assets/Individual_Sections/KoosaStuff/Photon Stuff/Scenes/Register.unity
   isLoaded: 1
   isActive: 1
