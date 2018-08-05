@@ -47,4 +47,8 @@ MonoBehaviour:
   - Reduce
   - Shooting
   - Destroy
+  - OnSceneFinishedLoading
+  - StartGame
+  - Play
+  - SelectHero
   DisableAutoOpenWizard: 1

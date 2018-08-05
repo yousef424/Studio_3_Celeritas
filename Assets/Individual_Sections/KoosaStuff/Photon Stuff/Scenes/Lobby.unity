@@ -244,7 +244,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 305758874
+  randomSeed: 1552779849
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3708,7 +3708,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 821665540}
+      - m_Target: {fileID: 821665541}
         m_MethodName: onClickJoinRoom
         m_Mode: 1
         m_Arguments:
@@ -7535,9 +7535,8 @@ GameObject:
   m_Component:
   - component: {fileID: 821665538}
   - component: {fileID: 821665537}
-  - component: {fileID: 821665539}
-  - component: {fileID: 821665540}
   - component: {fileID: 821665541}
+  - component: {fileID: 821665539}
   m_Layer: 0
   m_Name: PhotonScripts
   m_TagString: Untagged
@@ -7556,6 +7555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: deb46e16d80a62645a5a91de09e8af11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  offline: 0
   versionName: 0.1
 --- !u!4 &821665538
 Transform:
@@ -7578,24 +7578,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 821665536}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3da5d9c8cf6e254fa5f212a67c96b02, type: 3}
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomNameCreated: {fileID: 792552184}
-  roomExists: 0
---- !u!114 &821665540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 821665536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8be927422a1a0d46a65f6fedfbb359f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roomNameJoined: {fileID: 2142943557}
-  roomExists: 0
+  ownerId: 0
+  group: 0
+  OwnerShipWasTransfered: 0
+  prefixBackup: -1
+  synchronization: 3
+  onSerializeTransformOption: 3
+  onSerializeRigidBodyOption: 2
+  ownershipTransfer: 0
+  ObservedComponents:
+  - {fileID: 821665537}
+  - {fileID: 821665541}
+  ObservedComponentsFoldoutOpen: 1
+  viewIdField: 1
+  instantiationId: 1
+  currentMasterID: -1
+  isRuntimeInstantiated: 0
 --- !u!114 &821665541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7607,7 +7608,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e28bc69e2cf56fc4f83f086448cd0cdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerGame: {fileID: 1042967402891980, guid: d8b724fd0dbc51a43a5a6448f05fd9f9, type: 2}
+  redSpawnPoints: []
+  blueSpawnPoints: []
+  roomNameJoined: {fileID: 2142943557}
+  roomJoinedExists: 0
+  roomNameCreated: {fileID: 792552184}
+  roomCreatedExists: 0
+  arab: 0
+  russian: 0
+  korean: 0
+  american: 0
+  team: 0
+  state: 0
 --- !u!1 &986007835
 GameObject:
   m_ObjectHideFlags: 0
@@ -8554,7 +8566,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 821665539}
+      - m_Target: {fileID: 821665541}
         m_MethodName: CreatRoom
         m_Mode: 1
         m_Arguments:

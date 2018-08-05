@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PhotonConnection : MonoBehaviour
 {
+    public bool offline;
     public string versionName = "0.1";
 	// Use this for initialization
 	void Start ()
@@ -27,7 +28,6 @@ public class PhotonConnection : MonoBehaviour
         Debug.Log("Connecting to MasterClient");
         PhotonNetwork.playerName = PlayerPhoton.playerPhotonInstance.playerName;
         PhotonNetwork.JoinLobby(TypedLobby.Default);
-
     }
     private void OnJoinedLobby()
     {

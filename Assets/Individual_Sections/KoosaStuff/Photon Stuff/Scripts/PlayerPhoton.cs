@@ -5,14 +5,16 @@ using UnityEngine.UI;
 
 public class PlayerPhoton :Photon.MonoBehaviour
 {
+    #region Public Variables
     public static PlayerPhoton playerPhotonInstance = new PlayerPhoton();
     public string playerName;
     public string playerPassword;
     public bool blue;
     public bool red;
-   // public PhotonView photonviewplayerphoton;
- 
+    // public PhotonView photonviewplayerphoton;
+    #endregion
 
+    #region Unity Callbacks 
     void Awake()
     {
         playerPhotonInstance = this;
@@ -24,6 +26,9 @@ public class PlayerPhoton :Photon.MonoBehaviour
         playerPhotonInstance = this;
         DontDestroyOnLoad(this.gameObject);
     }
+    #endregion
+
+    #region My Functions
     public void SetPlayerStats(string userNameToSet, string passWordToSet)
     {
         PhotonNetwork.playerName = userNameToSet;
@@ -31,6 +36,10 @@ public class PlayerPhoton :Photon.MonoBehaviour
         playerName = userNameToSet;
         playerPassword = passWordToSet;
     }
+    #endregion
+
+    #region RPC
+
     [PunRPC]
     public void RedTeam()
     {
@@ -48,4 +57,6 @@ public class PlayerPhoton :Photon.MonoBehaviour
             blue = true;
       //  photonviewplayerphoton.RPC("BlueTeam", PhotonTargets.AllBuffered, 0);
     }
+    
 }
+#endregion

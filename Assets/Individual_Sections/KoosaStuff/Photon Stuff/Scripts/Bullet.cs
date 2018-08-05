@@ -9,10 +9,11 @@ public class Bullet : Photon.MonoBehaviour
     public void Awake()
     { 
         bulletRB = GetComponent<Rigidbody>();
+        bulletRB.AddForce(transform.forward * 30, ForceMode.Force);
     }
     public void Update()
     {
-        //bulletRB.AddForce(transform.forward);
+        //bulletRB.AddForce(transform.forward*30,ForceMode.Force);
         //transform.Translate(0, 0, -10);
     }
 
@@ -39,6 +40,7 @@ public class Bullet : Photon.MonoBehaviour
         gameObject.SetActive(false);
         
     }
+    /*
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("i hitting");
@@ -56,6 +58,7 @@ public class Bullet : Photon.MonoBehaviour
             }
         }
     }
+    */
 
 }
 

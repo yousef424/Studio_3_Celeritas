@@ -10,11 +10,13 @@ public class PlayerHealthHandler : Photon.MonoBehaviour
     public GameObject otherPlayerCanvas;
     public Image localPlayerHealthBar;
     public Image otherPlayerHealthBar;
+    public GameObject localPlayer;
 
     // Use this for initialization
     void Start()
     {
         CanvasManager();
+        localPlayer = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
@@ -24,15 +26,16 @@ public class PlayerHealthHandler : Photon.MonoBehaviour
 
         if (photonView.isMine)
         {
-               //localPlayerHealthBar.fillAmount -= 0.1f;
-           //localPlayer.GetComponent<PhotonView>().RPC("Reduce", PhotonTargets.All);
+            //localPlayerHealthBar.fillAmount -= 0.01f;
+            if (Input.GetKeyDown(KeyCode.Space))
+           localPlayer.GetComponent<PhotonView>().RPC("Reduce", PhotonTargets.All);
            localPlayerCanvas.SetActive(true);
 
         }
         else
         {
-            //otherPlayerHealthBar.fillAmount -= 0.1f;
-            // localPlayer.GetComponent<PhotonView>().RPC("Reduce", PhotonTargets.All);
+           // otherPlayerHealthBar.fillAmount -= 0.1f;
+             //localPlayer.GetComponent<PhotonView>().RPC("Reduce", PhotonTargets.All);
             otherPlayerCanvas.SetActive(true);
         }
     }

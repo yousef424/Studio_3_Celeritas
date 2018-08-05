@@ -2,14 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Photon;
 
 public class PlayerControllerNetwork : Photon.MonoBehaviour
 {
+
     public PhotonView playerPhotonView;
     public float speed;
-    private float rotSpeed=150f;
+    private float rotSpeed=5f;
     private Vector3 pos;
-    private float smoothing = 4;
+    public Quaternion rot;
+    private float smoothing = 0.05f;
     public bool flagTest;
     public GameObject playerCamera;
     public GameObject sceneCam;
@@ -17,9 +20,8 @@ public class PlayerControllerNetwork : Photon.MonoBehaviour
     public Text otherPlayerName;
     public List<GameObject> allies = new List<GameObject>();
     public List<GameObject> enemies = new List<GameObject>();
-    public bool red;
-    public bool blue;
     public GameObject bullet;
+    float x;
     public void Awake()
     { 
         sceneCam = GameObject.FindGameObjectWithTag("MainCamera");
@@ -41,7 +43,7 @@ public class PlayerControllerNetwork : Photon.MonoBehaviour
             else
             {
                 SmoothMovement();
-                //playerNameText.text = photonView.owner.name;
+                playerNameText.text = photonView.owner.name;
                 playerNameText.text = photonView.owner.name;
                 otherPlayerName.text = photonView.owner.name;
                 playerNameText.color = Color.red;
@@ -51,13 +53,12 @@ public class PlayerControllerNetwork : Photon.MonoBehaviour
         }
         else Movement();
 
-        if (Input.GetKeyDown(KeyCode.Space))
-            Shooting();
+
     }
     public void Movement()
     {
-        var x = Input.GetAxis("Horizontal") * Time.deltaTime * rotSpeed;
-        var z = Input.GetAxis("Vertical") * Time.deltaTime * speed;
+         x = Input.GetAxis("Mouse X");
+        float z = Input.GetAxis("Vertical") * Time.deltaTime * speed;
 
         transform.Rotate(0, x, 0);
         transform.Translate(0, 0, z);
@@ -65,18 +66,20 @@ public class PlayerControllerNetwork : Photon.MonoBehaviour
     }
     public void SmoothMovement()
     {
-        transform.position = Vector3.Lerp(transform.position, pos, Time.deltaTime*smoothing);
-        Debug.Log("ee");
+        transform.position = Vector3.Lerp(transform.position, pos, Time.deltaTime * smoothing* PhotonNetwork.networkingPeer.RoundTripTime);
+        transform.rotation = Quaternion.Lerp(transform.rotation, rot, Time.deltaTime * smoothing* PhotonNetwork.networkingPeer.RoundTripTime);
     }
     public void OnPhotonSerializeView(PhotonStream photonStream,PhotonMessageInfo photonMessage)
     {
         if(photonStream.isWriting)
         {
             photonStream.SendNext(transform.position);
+            photonStream.SendNext(transform.rotation);
         }
         else
         {
             pos = (Vector3)photonStream.ReceiveNext();
+            rot = (Quaternion)photonStream.ReceiveNext();
         }
     }
     public void Shooting()

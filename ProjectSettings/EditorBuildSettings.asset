@@ -15,5 +15,8 @@ EditorBuildSettings:
     path: Assets/Individual_Sections/KoosaStuff/Photon Stuff/Scenes/Lobby.unity
     guid: 1515f7e3a832588459c54aea179412c4
   - enabled: 1
+    path: Assets/Individual_Sections/KoosaStuff/Photon Stuff/Scenes/HeroSelect.unity
+    guid: 873eece902938e1449edb4af6e30d169
+  - enabled: 1
     path: Assets/Individual_Sections/KoosaStuff/Photon Stuff/Scenes/GameScene.unity
     guid: c8b49e3549810f44aad879af61c7bb1a

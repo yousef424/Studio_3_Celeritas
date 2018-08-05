@@ -30,18 +30,20 @@ public class JoinRoom : MonoBehaviour
         if (!roomExists)
             Debug.Log(roomNameJoined.text+" Room doesn't exist or can't be joined");
 
-        /*
+        
         RoomOptions roomOptions = new RoomOptions();
         roomOptions.MaxPlayers = 4;
-        PhotonNetwork.JoinOrCreateRoom(roomNameJoined.text, roomOptions, TypedLobby.Default);
-        */
+        
         
 
     }
     private void OnJoinedRoom()
     {
         Debug.Log(roomNameJoined.text + " Room Joined Successfully");
-        PhotonHnadler.instance.LoadLevel();
+        if (PhotonNetwork.playerList.Length == 1 & PhotonNetwork.isMasterClient == true)
+        {
+            this.GetComponent<PhotonView>().RPC("StartGame", PhotonTargets.All);
+        }
     }
     
 

@@ -5,12 +5,14 @@ SceneListBegin?
 Assets/Individual_Sections/KoosaStuff/Photon Stuff/Scenes/Register.unity
 Assets/Individual_Sections/KoosaStuff/Photon Stuff/Scenes/Login.unity
 Assets/Individual_Sections/KoosaStuff/Photon Stuff/Scenes/Lobby.unity
+Assets/Individual_Sections/KoosaStuff/Photon Stuff/Scenes/HeroSelect.unity
 Assets/Individual_Sections/KoosaStuff/Photon Stuff/Scenes/GameScene.unity
 SceneListEnd?
 82c8c8940439d24517b71a242f62fbc3 Assembly-CSharp.dll:.HighlightOwnedGameObj
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.PunTeams
 4d0187d1ee26ceba125a106f0dde0360 Assembly-CSharp.dll:.SmoothSyncMovement
 e17f92d3b13f18bef6e4629b9bff76dd Assembly-CSharp.dll:.DemoBoxesGui
+f891642c3c113ebf4ff95b6f87e50edd Assembly-CSharp.dll:.CameraController
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 4b12dd839b2293f8457cd67cc3610b85 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 8144169769d51429c4aedc8b0f92d47b UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -23,6 +25,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 92d7a83ea3c7404e484f3b2eed421855 UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 92d7a83ea3c7404e484f3b2eed421855 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 df374c01140c2d578bf70cbd60073d1d UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
+c08b196716247885d3b27f7f282b2568 Assembly-CSharp.dll:UnityStandardAssets.ImageEffects.ImageEffectBase
 9650139907be6d63bf3c3eaa8900f13f Assembly-CSharp.dll:.ThirdPersonController
 b027659a510ae8d01d6d5f31baf9827a Assembly-CSharp.dll:.PhotonStatsGui
 b646916c78b48f3208cda1a75aff4d8f Assembly-CSharp.dll:.ChatGui
@@ -32,6 +35,7 @@ ef45fa0ea9c8fe3f81d4c8d1cdbbc290 Assembly-CSharp.dll:.PlayerPhoton
 500c57c07393ea623562c2c51fa6d174 Assembly-CSharp.dll:.ShowInfoOfPlayer
 4d0622c6a9cbc2467475532a781adedc Assembly-CSharp.dll:ExitGames.Demos.DemoAnimator.PlayerAnimatorManager
 12d03bf668b6a389fcf305187e696e6d Assembly-CSharp.dll:.RpsDebug
+626693197e0e57556b3791ff3382a3d1 Assembly-CSharp.dll:.AddToInventory
 6fce0feadba7642a361e87ebfcfe753e Assembly-CSharp.dll:.PhotonAnimatorView
 28b9635dada29d5334975a74e5429ae3 Assembly-CSharp.dll:ExitGames.UtilityScripts.TextToggleIsOnTransition
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:ExitGames.UtilityScripts.ButtonInsideScrollList
@@ -117,6 +121,7 @@ ebfdd2489194de73284a969277395ad0 Assembly-CSharp.dll:.DemoRPGMovement
 6475769091568e8685a22e493bb5795b Assembly-CSharp.dll:.GUIFriendsInRoom
 aff887ef8389fd031a9559fa5958dade Assembly-CSharp.dll:.UserDataManagement
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OnClickDisableObj
+1812d069dc8b8ddb2ee662bcee64230a Assembly-CSharp.dll:.gun
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 4b12dd839b2293f8457cd67cc3610b85 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 8144169769d51429c4aedc8b0f92d47b UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -145,18 +150,19 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 3f32f08a64daf40b09ed864d96fe3840 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransform
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
+40d41f498420a9b3985f6fc7e5763447 Assembly-CSharp.dll:UnityStandardAssets.ImageEffects.Bloom
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 3b9ebbf43ed1bdd89459ad3095d9a50f Assembly-CSharp.dll:AudienceNetwork.AdChoices
 c2d15b04283157b00cbdbfaf16c18482 Assembly-CSharp.dll:.PickupItemSyncer
 c1df6bba7f7b35a48ac544b9017761dd Assembly-CSharp.dll:.PlayerDiamond
 090584907af2e462994cc893ced507b3 Assembly-CSharp.dll:.PhotonRigidbody2DView
+22df741b1a3c6d3b215ca28ad83c5a3f Assembly-CSharp.dll:UnityStandardAssets.ImageEffects.ScreenSpaceAmbientObscurance
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OnStartDelete
 1de5b0589e6fb98c8b8d7fcded724e3b Assembly-CSharp.dll:.CullArea
 fc4c581d5c780cfbc749c132df4d5008 Assembly-CSharp.dll:.NamePickGui
 cf9fc54ba6cf8c9a60336822831286fb Assembly-CSharp.dll:.JoinRoom
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.PunPlayerScores
 d7c3cc9e6aeec9a00634f6abffbe35e2 Assembly-CSharp.dll:.ConnectAndJoinRandom
-d7226e151fedd69236439ba6c7efcaeb Assembly-CSharp.dll:.PlayerContoller
 322cb40e1e282f28af980cbef7922a90 UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsEventTracker
 dc07d7ad69b399a46e92c483bf1c04ca UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsTracker
 a7140942da05de10672d1732cb07f934 Assembly-CSharp.dll:.AdPanel
@@ -211,7 +217,6 @@ d2a2bd333db22f480a8589e167314ecc Vuforia.UnityExtensions.dll:Vuforia.UserDefined
 15bea26698002c6c4a3087131232ce5c Vuforia.UnityExtensions.dll:Vuforia.WordBehaviour
 5a78906060300940acb71bc3dfb6396d Assembly-CSharp.dll:.DragToMove
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.CubeLerp
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.CameraController
 72575eff53c8d480521f5e6f632b2200 Assembly-CSharp.dll:.RewardedVideoAdTest
 26215f135eeb48d8fa1189498c107f6c Vuforia.UnityExtensions.dll:Vuforia.AnchorBehaviour
 0561521e336e270e6e5a9c61387cb838 Vuforia.UnityExtensions.dll:Vuforia.AnchorInputListenerBehaviour
@@ -250,7 +255,8 @@ d2a2bd333db22f480a8589e167314ecc Vuforia.UnityExtensions.dll:Vuforia.UserDefined
 15bea26698002c6c4a3087131232ce5c Vuforia.UnityExtensions.dll:Vuforia.WordBehaviour
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:Facebook.Unity.Example.GraphRequest
 9650139907be6d63bf3c3eaa8900f13f Assembly-CSharp.dll:.myThirdPersonController
-aa3a89e111699c1731babd411ae95a14 Assembly-CSharp.dll:.PhotonConnection
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Bullet
+aff3f4831943378a875fdfd39255842e Assembly-CSharp.dll:.PhotonConnection
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:Facebook.Unity.Example.LogView
 362c847978adb9cef4966ca1c5403c2b Assembly-CSharp.dll:.MoveCam
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:Facebook.Unity.Example.ConsoleBase
@@ -264,6 +270,8 @@ a7a85e3660316548e6df72942099a49d Assembly-CSharp.dll:.MessageOverlay
 4ce2b1853c9a392b036a6a654be90ccb Assembly-CSharp.dll:.InstantiateCube
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.IgnoreUiRaycastWhenInactive
 79faa3d65f06fd0a6111fd24966956f5 Assembly-CSharp.dll:.ChatAppIdCheckerUI
+cac5093fb1baf037bd671ecbc6727828 Assembly-CSharp.dll:UnityStandardAssets.ImageEffects.ScreenOverlay
+e715797ee59e688210cf8f04171b974f Assembly-CSharp.dll:.Item
 ada54cb428213a7e0c4b986e95788f97 Assembly-CSharp.dll:.PhotonTransformView
 05524b8f659e7bfe5756d1335fec24ba Facebook.Unity.dll:Facebook.Unity.Mobile.Android.AndroidFacebookGameObject
 05524b8f659e7bfe5756d1335fec24ba Facebook.Unity.dll:Facebook.Unity.Mobile.Android.AndroidFacebookLoader
@@ -283,18 +291,24 @@ ada54cb428213a7e0c4b986e95788f97 Assembly-CSharp.dll:.PhotonTransformView
 05524b8f659e7bfe5756d1335fec24ba Facebook.Unity.dll:Facebook.Unity.Editor.Dialogs.MockLoginDialog
 05524b8f659e7bfe5756d1335fec24ba Facebook.Unity.dll:Facebook.Unity.Editor.Dialogs.MockShareDialog
 c0ad1fb5d400aa83cb257e5f6c3714cf Assembly-CSharp.dll:.OnClickDestroy
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.RPGCharacterGUI
 5baa9ead5a48fe99f1d68e645d817c5d Assembly-CSharp.dll:.AudioRpc
+10ae2a5d87a07627d5a6ad5827ee4401 Assembly-CSharp.dll:.RPGCharacterControllerFREE
+dcdf12f70f2632d6cccadc362f2bdef5 Assembly-CSharp.dll:.InventoryUIManager
 049e50d5664c2c8844b66daa2e251057 Assembly-CSharp.dll:.AdQuad
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:Facebook.Unity.Example.MainMenu
 30c6237931168f8b4c2f10a656a47aa8 Assembly-CSharp.dll:.PickupItem
 b9efe2a0d1c9ba7bc46e66a07a897115 Assembly-CSharp.dll:.ServerSettings
 32e8fe00b63ed946490b898f6024a2f2 Facebook.Unity.Settings.dll:Facebook.Unity.Settings.FacebookSettings
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:UnityStandardAssets.ImageEffects.PostEffectsHelper
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.GameManagers
 fb2ac97018c2c9b8b721d1a47fc40206 Assembly-CSharp.dll:ExitGames.Demos.DemoAnimator.Launcher
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.UIManager
 e3db0de06ede87e84b88d4a2079f2b57 Assembly-CSharp.dll:ExitGames.UtilityScripts.TextButtonTransition
+b26b3a55de2a8cbeee573d45c8848f09 Assembly-CSharp.dll:UnityStandardAssets.ImageEffects.ScreenSpaceAmbientOcclusion
 78df6e77063563c8c0c87b3ec1c0226e Assembly-CSharp.dll:.SimpleTouchPad
 1579d2d26533a154c541754153b8ae33 Assembly-CSharp.dll:ExitGames.Demos.DemoAnimator.PlayerUI
-f0efb28ed2bf4e41522e45a82917f5ca Assembly-CSharp.dll:.PlayerControllerNetwork
+c1cf584fb82467a7839d9da35b6518b3 Assembly-CSharp.dll:.PlayerControllerNetwork
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 60b2bb652410a5867a5ab9a01cd38461 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
@@ -309,6 +323,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 3f32f08a64daf40b09ed864d96fe3840 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransform
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
+4fd2d7785a52b097cebdd8c6336cdcfe Assembly-CSharp.dll:.Inventory
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OnAwakePhysicsSettings
 4efe297689455799fab987dfaf7ba0d5 Assembly-CSharp.dll:.OnClickLoadSomething
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.PointedAtGameObjectInfo
@@ -327,6 +342,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 05524b8f659e7bfe5756d1335fec24ba Facebook.Unity.dll:Facebook.Unity.Canvas.JsBridge
 05524b8f659e7bfe5756d1335fec24ba Facebook.Unity.dll:Facebook.Unity.Editor.Dialogs.MockLoginDialog
 05524b8f659e7bfe5756d1335fec24ba Facebook.Unity.dll:Facebook.Unity.Editor.Dialogs.MockShareDialog
+387402921d9e98b1ab7f902308cd8fda Assembly-CSharp.dll:.CameraController1
 7a6bd35539e9474d0ae9e789bd2a7e6f Assembly-CSharp.dll:.DataCollector
 ea580b2edab741d1d6e6445b14097645 Assembly-CSharp.dll:.RPGCamera
 173a033cde910692227c728d6b89fedd Assembly-CSharp.dll:.OnClickCallMethod
@@ -347,7 +363,9 @@ abe32a93cd37b12375c9475f8f38bec3 Assembly-CSharp.dll:.PunTurnManager
 e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
 67a5f2c97205d2e41a8ed7c7ce898f6e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
 67a5f2c97205d2e41a8ed7c7ce898f6e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSourceExtension
+8613e46c19eddc80a0d7e191c518aab4 Assembly-CSharp.dll:.Shop
 9cb24d80f90c6c239d5304446a0d7f3e Assembly-CSharp.dll:.CubeInter
+b527ff4ea7087b4a4712dd1c830e709c Assembly-CSharp.dll:.PlayerHealthHandler
 c0b17230605b48ee2c8fdf6ad9d187ec Assembly-CSharp.dll:ExitGames.Demos.DemoAnimator.CameraWork
 febb860c81dce3b7f633ebf56de24419 Assembly-CSharp.dll:.IdleRunJump
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Demo2DJumpAndRun
@@ -368,6 +386,7 @@ fe180736ec3bd9cf69fd20bbec04acfb Assembly-CSharp.dll:ExitGames.Demos.DemoAnimato
 e29eedec83444c5ff91ad08de30f1219 Assembly-CSharp.dll:.GUICustomAuth
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 8e75c7ff572e377afe5aec0a3c77276b Assembly-CSharp.dll:.ThirdPersonCamera
+710c365ba02320dd150107d406e3133c Assembly-CSharp.dll:.TimerShader
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ThirdPersonNetwork
 dfd3495563feaedcc9fa5f63c24ee55f Assembly-CSharp.dll:.CreateRoom
 3c64e2ee2ee0571fefcc0fe9214f335c Assembly-CSharp.dll:.RpsDemoConnect
@@ -378,6 +397,7 @@ ec0082b40adf3b0930cd87250ffdbf1d Assembly-CSharp.dll:.SupportLogger
 298901e5fd6ccf8cd5b55cb6018e6abe Assembly-CSharp.dll:.PickupItemSimple
 08712033bfb8d4fd2842041f9a20ded7 Assembly-CSharp.dll:.ManualPhotonViewAllocator
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:Facebook.Unity.Example.AppInvites
+2a2c303c8a39965e68fbfd9f4b02fb12 Assembly-CSharp.dll:.InventorySlot
 a2d612afa0d90f75edf1d10832a65609 Assembly-CSharp.dll:.JumpAndRunMovement
 1356b4a6096c35c829823b7e28399030 Assembly-CSharp.dll:.DemoMecanimGUI
 de0d4884242514ddfb2f269731d3a740 Assembly-CSharp.dll:.minionBehaviourtest
@@ -391,7 +411,8 @@ bd391be401e6d3724720058620cce6e5 Assembly-CSharp.dll:.ToHubButton
 47d4dbb91b8073a64be47276b7d4f29a Assembly-CSharp.dll:ExitGames.Demos.DemoAnimator.GameManager
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OnDoubleclickDestroy
 4b8b25ed60c1bb417f20991003ba0256 Assembly-CSharp.dll:.WorkerMenu
-243f4bf75812f3e3504f6cf88504ab02 Assembly-CSharp.dll:.PhotonHnadler
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:UnityStandardAssets.ImageEffects.PostEffectsBase
+6e959f940c2abe138014b0e413249b7d Assembly-CSharp.dll:.PhotonHnadler
 604f5f55c1cc414f64da1990b36ff015 Assembly-CSharp.dll:.PhotonView
 b2dc25029b6f083ffbbdf9df269f825a Assembly-CSharp.dll:.InRoomChat
 32e8fe00b63ed946490b898f6024a2f2 Facebook.Unity.Settings.dll:Facebook.Unity.Settings.FacebookSettings
@@ -469,6 +490,3 @@ d2a2bd333db22f480a8589e167314ecc Vuforia.UnityExtensions.dll:Vuforia.UserDefined
 05524b8f659e7bfe5756d1335fec24ba Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
 15bea26698002c6c4a3087131232ce5c Vuforia.UnityExtensions.dll:Vuforia.WordBehaviour
 54a26a95db9c623b6eb6fc01ae3ef891 Assembly-CSharp.dll:.CubeExtra
-8de7f13c8ae52b7b2a344a1ab919960c Assembly-CSharp.dll:.PlayerHealthHandler
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Bullet
-0f943198429c93609e841212d11b4efc Assembly-CSharp.dll:.gun

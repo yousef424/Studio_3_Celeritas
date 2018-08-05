@@ -530,7 +530,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.15900001, y: 0.61700004}
   m_AnchorMax: {x: 0.36626467, y: 0.66400003}
-  m_AnchoredPosition: {x: 3.0899963, y: 0}
+  m_AnchoredPosition: {x: 3.0900269, y: 0}
   m_SizeDelta: {x: 1.2000122, y: 6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &795916768
@@ -1080,7 +1080,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: -1611049224
+  randomSeed: -8794413
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -8268,7 +8268,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.15900001, y: 0.47625673}
   m_AnchorMax: {x: 0.36626467, y: 0.5138503}
-  m_AnchoredPosition: {x: 3.1080017, y: 2}
+  m_AnchoredPosition: {x: 3.1080322, y: 2}
   m_SizeDelta: {x: 0.47999573, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1884472356

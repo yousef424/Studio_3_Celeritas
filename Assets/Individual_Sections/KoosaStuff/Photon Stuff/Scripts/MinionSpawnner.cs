@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 
 
-public class MinionSpawnner : MonoBehaviour
+public class MinionSpawnner :Photon.MonoBehaviour
 {
     #region Public Variables
     public List<GameObject> zombies;
@@ -79,6 +79,7 @@ public class MinionSpawnner : MonoBehaviour
             }
         }
     }
+    /*
     IEnumerator Spawnner()
     {
         yield return new WaitForSeconds(startWait);
@@ -113,6 +114,7 @@ public class MinionSpawnner : MonoBehaviour
            // hardZombieToSpawn += 1;
         }
     }
+    */
     IEnumerator SpawnnerPool()
     {
         yield return new WaitForSeconds(startWait);

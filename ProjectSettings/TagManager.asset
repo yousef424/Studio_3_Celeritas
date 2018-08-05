@@ -8,6 +8,13 @@ TagManager:
   - base1
   - red
   - blue
+  - playerspawn
+  - redspawn
+  - bluespawn
+  - PlayerCollider
+  - weak
+  - push
+  - pick
   layers:
   - Default
   - TransparentFX
